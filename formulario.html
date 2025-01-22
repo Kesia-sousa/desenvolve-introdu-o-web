@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <form method="post" action="processar-pesquisa.html">
+        <section>
+            <h2>Dados Pessoais</h2>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required />
+            </p>
+        </section>
+
+        <section>
+            <h2>Dados de Pesquisa</h2>
+            <p>Como você avalia o nosso serviço?</p>
+            <p>
+                <label for="Excelente">Excelente</label>
+                <input type="radio" id="Excelente" name="avaliacao" value="Excelente" />
+            </p>
+            <p>
+                <label for="Boa">Boa</label>
+                <input type="radio" id="Boa" name="avaliacao" value="Boa" />
+            </p>
+            <p>
+                <label for="Regular">Regular</label>
+                <input type="radio" id="Regular" name="avaliacao" value="Regular" />
+            </p>
+            <p>
+                <label for="Ruim">Ruim</label>
+                <input type="radio" id="Ruim" name="avaliacao" value="Ruim" />
+            </p>
+            <p>
+                <label for="Péssima">Péssima</label>
+                <input type="radio" id="Péssima" name="avaliacao" value="Péssima" />
+            </p>
+
+            <p>Qual foi sua principal motivação para utilizar nosso serviço?</p>
+            <p>
+                <label for="Qualidade">Qualidade</label>
+                <input type="radio" id="Qualidade" name="motivacao" value="Qualidade" />
+            </p>
+            <p>
+                <label for="Preco">Preço</label>
+                <input type="radio" id="Preco" name="motivacao" value="Preço" />
+            </p>
+            <p>
+                <label for="Recomendacao">Recomendação</label>
+                <input type="radio" id="Recomendacao" name="motivacao" value="Recomendação" />
+            </p>
+            <p>
+                <label for="Outros">Outros</label>
+                <input type="radio" id="Outros" name="motivacao" value="Outros" />
+            </p>
+
+            <p>
+                <label for="atendimento">Quanto tempo você espera para ser atendido?</label>
+                <select id="atendimento" name="atendimento">
+                    <option value="continuo">Contínuo</option>
+                    <option value="menos-5min">Menos de 5 min</option>
+                    <option value="5-10min">5-10 min</option>
+                    <option value="mais-10min">Mais de 10 min</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="checkbox" id="compartilhar-dados" name="compartilhar-dados" />
+                <label for="compartilhar-dados">Autorizo compartilhamento de dados com terceiros</label>
+            </p>
+        </section>
+
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
